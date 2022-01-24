@@ -1,0 +1,66 @@
+<!-- 自定义导航栏、搜索框等 -->
+<view class="custom-bar" style="height: {{navHeight}}px;background-color: #FFFFFF;">
+  <view style="height: {{searchHeight}}px;width: {{searchWidth}}px;margin-top: {{searchMarginTop}}px;align-items:center; display:flex;background-color: #FFFFFF">
+    <view class="custom-bar-search">
+      <text class="cuIcon-search"></text>
+      <input class="margin-left-xs" type="text" placeholder="搜索学校、热门" confirm-type="search"></input>
+    </view>
+  </view>
+</view>
+
+<view style="margin-top: {{navHeight}}px;">
+  <scroll-view scroll-x class="bg-white nav text-center">
+    <view class="cu-item {{index==tabCur?'text-cyan cur':''}}" wx:for="{{tabNames}}" wx:for-item="key" bindtap="tabSelectBindTap" data-id="{{index}}">
+      <view class="{{index==tabCur?'text-bold text-xl':''}}">{{key}}</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="cu-card case" bindtap="detailBIndTap">
+  <view class="cu-item" hover-class="text-gray">
+    <view class="cu-capsule radius">
+      <view class="cu-tag bg-gradual-orange sm">
+        <text class="cuIcon-hotfill text-yellow"></text>
+      </view>
+      <view class="cu-tag line-orange sm">
+        23
+      </view>
+    </view>
+    <view class="cu-bar">
+      <text class="content-text text-xl margin-left margin-right">我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。</text>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">正义天使 凯尔</view>
+          <view class="text-gray text-sm flex justify-between">
+            2022-01-22
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text>999+
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text>999+
+              <text class="cuIcon-messagefill margin-lr-xs"></text>999+
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action text-green">
+    <view class="cuIcon-creativefill"></view>
+    发现
+  </view>
+  <view class="action text-gray add-action">
+    <button class="cu-btn cuIcon-add bg-gradual-blue shadow" bindtap="publishBindTap"></button>
+    发布
+  </view>
+  <view class="action text-gray" bindtap="mineBindTap">
+    <view class="cuIcon-myfill">
+      <!-- <view class="cu-tag badge"></view> -->
+    </view>
+    我的
+  </view>
+</view>

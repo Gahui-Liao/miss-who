@@ -1,0 +1,86 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <view class="padding">
+      <view class="cu-avatar xl round" style="background-image:url({{userInfo.avatarUrl}});"></view>
+    </view>
+    <view class="text-xl text-bold">{{userInfo.nickName}}
+    </view>
+    <view class="margin-top-sm">
+      <text>风吹过八千里</text>
+    </view>
+  </view>
+  <view class="padding flex text-center">
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green text-bold">0</view>
+      <view class="margin-top-sm">发布
+      </view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-blue text-bold">666</view>
+      <view class="margin-top-sm">评论
+      </view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-orange text-bold ">0</view>
+      <view class="margin-top-sm">点赞
+      </view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-yellow text-bold">0</view>
+      <view class="margin-top-sm">收藏
+      </view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="noticeBindTap">
+        <text class="cuIcon-newfill text-grey"></text>
+        <text class="text-grey">消息通知</text>
+      </view>
+      <view class="text-right">
+        <view class='cu-tag round sm bg-red'>99</view>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-discoverfill text-grey"></text>
+        <text class="text-grey">我的发布</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-presentfill text-grey"></text>
+        <text class="text-grey">赞赏支持</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-grey"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+    
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/test/list" hover-class="none">
+        <text class="cuIcon-servicefill text-grey"></text>
+        <text class="text-grey">联系作者</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action text-gray" bindtap="indexBindTap">
+    <view class="cuIcon-creativefill"></view>
+    发现
+  </view>
+  <view class="action text-gray add-action" bindtap="publishBindTap">
+    <button class="cu-btn cuIcon-add bg-gradual-blue shadow"></button>
+    发布
+  </view>
+  <view class="action text-green">
+    <view class="cuIcon-myfill"></view>
+    我的
+  </view>
+</view>
