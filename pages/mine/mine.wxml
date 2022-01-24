@@ -48,7 +48,7 @@
       </view>
     </view>
     <view class="cu-item arrow">
-      <view class="content" bindtap="showQrcode">
+      <view class="content" bindtap="presentBindTap">
         <text class="cuIcon-presentfill text-grey"></text>
         <text class="text-grey">赞赏支持</text>
       </view>

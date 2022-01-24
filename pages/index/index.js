@@ -19,7 +19,7 @@ Page({
   // 事件处理函数
   publishBindTap() {
     console.log("跳转至发布页面");
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../publish/publish'
     })
   },
@@ -36,7 +36,7 @@ Page({
   },
 
   detailBIndTap(e) {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../detail/detail',
     })
   },

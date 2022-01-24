@@ -1,39 +1,13 @@
-// pages/mine/mine.js
-const app = getApp();
-
+// pages/present/present.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: app.globalData.userInfo
+
   },
-  indexBindTap() {
-    console.log("跳转至首页");
-    wx.redirectTo({
-      url: '../index/index'
-    })
-  },
-  presentBindTap(){
-    wx.navigateTo({
-      url: '../present/present',
-    })
-  },
-  publishBindTap() {
-    console.log("跳转至发布页面");
-    wx.redirectTo({
-      url: '../publish/publish'
-    })
-  },
-  noticeBindTap(){
-    wx.navigateTo({
-      url: '../notice/notice',
-    })
-    // wx.redirectTo({
-    //   url: '../notice/notice',
-    // })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -46,9 +20,6 @@ Page({
         timingFunc: 'easeIn'
       }
     });
-    this.setData({
-      userInfo: app.globalData.userInfo
-    })
   },
 
   /**
