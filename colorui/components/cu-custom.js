@@ -41,7 +41,7 @@ Component({
    */
   methods: {
     BackPage() {
-      console.log("返回上一页");
+      // console.log("返回上一页");
       wx.navigateBack({
         delta: 1
       });

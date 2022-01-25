@@ -29,7 +29,7 @@ Page({
         console.log(app.globalData.userInfo);
         app.globalData.login = true;
         // 设置全局用户缓存
-        wx.setStorageSync('userInfo', e.detail.userInfo)
+        wx.setStorageSync('userInfo', res.userInfo)
         wx.redirectTo({
           url: '/pages/index/index',
         })

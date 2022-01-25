@@ -14,20 +14,6 @@
   /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); */
 }
 
-.present-bg::after {
-  content: "";
-  position: absolute;
-  width: 100vw;
-  height: 50vw;
-  background-color: #f1f1f1;
-  transform: rotate(-10deg) scale(2, 2);
-  bottom: -60vw;
-  left: 0;
-  right: 0;
-  margin: auto;
-
-}
-
 .present-bg text {
   opacity: 0.8;
 }

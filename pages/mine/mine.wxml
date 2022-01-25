@@ -1,5 +1,5 @@
-<scroll-view scroll-y class="scrollPage">
-  <view class="UCenter-bg">
+<!-- <scroll-view scroll-y class="scrollPage"> -->
+  <view class="mine-bg">
     <view class="padding">
       <view class="cu-avatar xl round" style="background-image:url({{userInfo.avatarUrl}});"></view>
     </view>
@@ -68,7 +68,7 @@
     </view>
   </view>
   <view class="cu-tabbar-height"></view>
-</scroll-view>
+<!-- </scroll-view> -->
 
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="action text-gray" bindtap="indexBindTap">

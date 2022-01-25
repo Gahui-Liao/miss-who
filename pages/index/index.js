@@ -24,7 +24,7 @@ Page({
     })
   },
   mineBindTap() {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../mine/mine',
     })
   },

@@ -10,8 +10,8 @@
 
 <view style="margin-top: {{navHeight}}px;">
   <scroll-view scroll-x class="bg-white nav text-center">
-    <view class="cu-item {{index==tabCur?'text-cyan cur':''}}" wx:for="{{tabNames}}" wx:for-item="key" bindtap="tabSelectBindTap" data-id="{{index}}">
-      <view class="{{index==tabCur?'text-bold text-xl':''}}">{{key}}</view>
+    <view class="cu-item {{index==tabCur?'text-cyan cur':''}}" wx:for="{{tabNames}}" wx:key="key" wx:for-item="name" bindtap="tabSelectBindTap" data-id="{{index}}">
+      <view class="{{index==tabCur?'text-bold text-xl':''}}">{{name}}</view>
     </view>
   </scroll-view>
 </view>

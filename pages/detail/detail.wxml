@@ -2,7 +2,7 @@
   <view slot="backText" class="text-black">返回</view>
   <view slot="content" class="text-bold text-black">详情</view>
 </cu-custom>
-<view class="cu-card dynamic no-card">
+<view class="cu-card dynamic no-card margin-top-xs">
   <view class="cu-item shadow">
     <view class="cu-list menu-avatar">
       <view class="cu-item">

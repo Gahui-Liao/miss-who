@@ -31,8 +31,11 @@ App({
         console.log("searchHeight==>" + this.globalData.searchHeight);
         this.globalData.searchWidth = right - width; // 胶囊按钮右边坐标 - 胶囊按钮宽度 = 按钮左边可使用宽度
       }
-    })
-    if (!this.globalData.login || !wx.getStorage("userInfo")) {
+    });
+    console.log("本地缓存数据");
+    console.log(wx.getStorageSync('userInfo'));
+    // 如果已经授权登录过
+    if (!wx.getStorageSync("userInfo")) {
       wx.reLaunch({
         url: '/pages/login/login',
       });
@@ -42,7 +45,7 @@ App({
         duration: 2000,
         mask: true
       });
-    }
+    };
   },
   globalData: {
     login: false
