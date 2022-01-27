@@ -3,18 +3,31 @@
   <view slot="content" class="text-bold text-black">发布</view>
 </cu-custom>
 <view class="cu-form-group margin-top-xs">
-  <textarea style="height: 300px;" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="在这里你可以分享学校的大事件、自己的心情等等~"></textarea>
+  <textarea style="height: 200px;" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="在这里你可以分享学校的大事件、自己的心情等等~"></textarea>
 </view>
-<view class="cu-form-group">
+<view class="bg-white padding-lr">
+  <view class="grid col-3 grid-square flex-sub">
+    <view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+      <image src='{{imgList[index]}}' mode='aspectFill'></image>
+      <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+        <text class="cuIcon-close"></text>
+      </view>
+    </view>
+    <view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<3}}">
+      <text class="cuIcon-cameraadd"></text>
+    </view>
+  </view>
+</view>
+<!-- <view class="cu-form-group">
   <view class="title">学校选择</view>
   <picker mode="region" bindchange="schoolChange" :value="region">
     <view class="picker">
       请选择学校
     </view>
   </picker>
-</view>
+</view> -->
 <view class="cu-form-group">
-  <view class="title">地址选择</view>
+  <view class="title"> <text class="cuIcon-locationfill"></text>地址选择</view>
   <picker mode="region" bandchange="regionChange" :value="region">
     <view class="picker">
       请选择地址
@@ -23,6 +36,6 @@
 </view>
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="cu-bar btn-group">
-    <button class="cu-btn bg-green shadow-blur round lg">立即发布</button>
+    <button class="cu-btn bg-gradual-orange shadow-blur round lg">立即发布</button>
   </view>
 </view>

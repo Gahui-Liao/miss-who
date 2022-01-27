@@ -18,24 +18,30 @@
     <view class="text-content">
       折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！
     </view>
-    <view class="padding-bottom flex text-center text-grey bg-white">
+    <view class="flex-sub padding-lr">
+      <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix" style="width: 100%;"></image>
+      <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix" style="width: 100%;"></image>
+    </view>
+    <view class="padding-bottom-sm flex text-center text-gray text-bold bg-white">
       <view class="flex flex-sub flex-direction solid-right">
         <view class="margin-top-sm">
-          <text class="cuIcon-share"></text>分享
+          <text class="cuIcon-share"></text>
+          <text class="text-sm margin-lr-xs">分享</text>
         </view>
       </view>
       <view class="flex flex-sub flex-direction solid-right">
         <view class="margin-top-sm">
-          <text class="cuIcon-comment"></text>评论
+          <text class="cuIcon-favor"></text>
+          <text class="text-sm margin-lr-xs">收藏</text>
         </view>
       </view>
       <view class="flex flex-sub flex-direction">
         <view class="margin-top-sm">
-          <text class="cuIcon-appreciate"></text>点赞
+          <text class="cuIcon-appreciate"></text>
+          <text class="text-sm margin-lr-xs">点赞</text>
         </view>
       </view>
     </view>
-
     <view class="cu-list menu-avatar comment solids-top">
       <view class="cu-item">
         <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
@@ -65,12 +71,6 @@
 </view>
 <view class="cu-bar input foot padding-bottom-xl padding-top">
   <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
-  <!-- <view class="action">
-    <text class="cuIcon-roundaddfill text-grey"></text>
-  </view> -->
-  <input class="solid-bottom" maxlength="300" cursor-spacing="10" placeholder="评论点啥~"></input>
-  <view class="action">
-    <text class="cuIcon-emojifill text-grey"></text>
-  </view>
-  <button class="cu-btn bg-green shadow-blur">发送</button>
+  <input class="solid round bg-gray padding-left-sm" maxlength="300" cursor-spacing="10" placeholder="评论点啥~"></input>
+  <button class="cu-btn bg-cyan">发送</button>
 </view>

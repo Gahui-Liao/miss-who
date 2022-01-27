@@ -45,7 +45,9 @@ App({
         duration: 2000,
         mask: true
       });
-    };
+    } else {
+      this.globalData.userInfo = wx.getStorageSync('userInfo');
+    }
   },
   globalData: {
     login: false

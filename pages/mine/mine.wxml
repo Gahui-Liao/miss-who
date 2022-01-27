@@ -79,7 +79,7 @@
     <button class="cu-btn cuIcon-add bg-gradual-blue shadow"></button>
     发布
   </view>
-  <view class="action text-green">
+  <view class="action text-black">
     <view class="cuIcon-myfill"></view>
     我的
   </view>
