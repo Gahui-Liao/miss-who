@@ -1,0 +1,5 @@
+<view class="flex text-center margin-top-xl padding-bottom-xl">
+  <view class="flex flex-sub flex-direction">
+    <text class="text-xs text-gray">Copyright &copy; 2022-2099 GH</text>
+  </view>
+</view>

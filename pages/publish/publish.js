@@ -8,7 +8,7 @@ Page({
     imgList: []
   },
 
-  ChooseImage() {
+  chooseImage() {
     wx.chooseImage({
       count: 3, //默认9
       sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
@@ -23,16 +23,18 @@ Page({
             imgList: res.tempFilePaths
           })
         }
+        console.log("图片");
+        console.log(this.data.imgList)
       }
     });
   },
-  ViewImage(e) {
+  viewImage(e) {
     wx.previewImage({
       urls: this.data.imgList,
       current: e.currentTarget.dataset.url
     });
   },
-  DelImg(e) {
+  delImg(e) {
     wx.showModal({
       // title: '召唤师',
       content: '确定要删除这张图片？',
@@ -53,14 +55,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarColor({
-      frontColor: '#000000',
-      backgroundColor: '#000000',
-      animation: {
-        duration: 400,
-        timingFunc: 'easeIn'
-      }
-    });
+
   },
 
   /**

@@ -10,10 +10,15 @@
     "pages/present/present"
   ],
   "window": {
-    "navigationStyle": "custom"
+    "navigationStyle": "custom",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom/cu-custom",
+    "cu-footer": "/colorui/components/cu-footer/cu-footer",
+    "cu-nomore": "/colorui/components/cu-devider/cu-devider"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -40,14 +40,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarColor({
-      frontColor: '#000000',
-      backgroundColor: '#ff0000',
-      animation: {
-        duration: 400,
-        timingFunc: 'easeIn'
-      }
-    });
+    // wx.setNavigationBarColor({
+    //   frontColor: '#000000',
+    //   backgroundColor: '#ff0000',
+    //   animation: {
+    //     duration: 400,
+    //     timingFunc: 'easeIn'
+    //   }
+    // });
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true

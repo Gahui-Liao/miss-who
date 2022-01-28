@@ -1,0 +1,30 @@
+
+@import "../../main.wxss";
+@import "../../icon.wxss";
+
+.devider{
+  width:100%;
+  margin-top: 100rpx;
+  align-self: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.devider:before{
+  content:""; 
+  margin-right: 20rpx;
+  height:1px; 
+  border: none;
+  border-top:1px solid gray;
+  flex: 1 1 0rpx;
+}
+.devider::after{
+  content:""; 
+  margin-left: 20rpx;
+  height:1px; 
+  border: none;
+  border-top:1px solid gray;
+  flex: 1 1 0rpx;
+}

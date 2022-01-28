@@ -42,12 +42,6 @@
       </view>
     </view>
     <view class="cu-item arrow">
-      <view class="content" bindtap="showQrcode">
-        <text class="cuIcon-discoverfill text-grey"></text>
-        <text class="text-grey">我的发布</text>
-      </view>
-    </view>
-    <view class="cu-item arrow">
       <view class="content" bindtap="presentBindTap">
         <text class="cuIcon-presentfill text-grey"></text>
         <text class="text-grey">赞赏支持</text>
@@ -69,6 +63,7 @@
   </view>
   <view class="cu-tabbar-height"></view>
 <!-- </scroll-view> -->
+<cu-footer/>
 
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="action text-gray" bindtap="indexBindTap">

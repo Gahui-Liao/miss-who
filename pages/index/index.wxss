@@ -4,6 +4,8 @@
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 999;
+  background-color: #FFFFFF;
 }
 
 .custom-bar-search {
@@ -27,4 +29,10 @@
   white-space: normal !important;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.visit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }

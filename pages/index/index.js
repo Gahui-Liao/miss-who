@@ -12,8 +12,8 @@ Page({
     tabCur: 0,
     scrollLeft: 0,
     tabNames: [
-      "热门",
-      "推荐"
+      "推荐",
+      "关注"
     ]
   },
   // 事件处理函数
@@ -41,14 +41,14 @@ Page({
     })
   },
   onLoad() {
-    wx.setNavigationBarColor({
-      frontColor: '#000000',
-      backgroundColor: '#000000',
-      animation: {
-        duration: 400,
-        timingFunc: 'easeIn'
-      }
-    });
+    // wx.setNavigationBarColor({
+    //   frontColor: '#000000',
+    //   backgroundColor: '#000000',
+    //   animation: {
+    //     duration: 400,
+    //     timingFunc: 'easeIn'
+    //   }
+    // });
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
